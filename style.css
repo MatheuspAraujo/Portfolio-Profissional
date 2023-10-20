@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #585858;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+
+
+
+
+.content img {
+    width: 6vh;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+
+.icons a{
+    transition: transform 0.3s ease-out;
+}
+
+.icons a:hover {
+    transform: translateY(-10px);
+}
+
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+header .content h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sobre-mim{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.sobre-mim .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.sobre-mim .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.sobre-mim .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sobre-mim .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sobre-mim .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.sobre-mim .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.sobre-mim .card a:hover{
+    color: #1e40af;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.meus-projetos{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.meus-projetos .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.meus-projetos .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.meus-projetos .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.meus-projetos .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.meus-projetos .card .content .img {
+    display: flex;
+}
+
+.meus-projetos .card .content .img .img-pc {
+    width: 60vh;
+    height: auto;
+}
+
+.meus-projetos .card .content .img .img-mobile {
+    width: 20vh;
+    height: auto;
+    margin-left: -60px;
+}
+
+.meus-projetos .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.meus-projetos .card p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.meus-projetos .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.meus-projetos .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.meus-projetos .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-projetos {
+    text-align: center;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        display: none;
+    }
+    .sobre-mim{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .meus-projetos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container .meus-projetos .card .content .img {
+        justify-content: center;
+    
+    } 
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .container .content h1 {
+        font-size: 5rem;
+    }
+
+    .container .content p {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .sobre-mim{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meus-projetos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meus-projetos .card .content .img {
+        width: 60vh;
+    }
+
+    .meus-projetos .card .content .img .img-pc{
+        width: 50vh;
+        height: 30vh;
+    }
+
+    .meus-projetos .card .content .img .img-mobile{
+        width: 20vh;
+        height: 30vh;
+    }
+}
